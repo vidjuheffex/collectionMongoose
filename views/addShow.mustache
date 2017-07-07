@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="addShowPage">
+        <div class="addShowWrapper">
+        <form class="addShow_form" action="/addShow" method="post">
+            <div class="inputRow">
+                <label for="date_input">Date:</label>
+                <input type="date" id="date_input" name="date">
+            </div>
+            <div class="inputRow radioRow">
+                <div><input type="radio" id="earlytime_radio" name="time" value="early" class="radio">
+                    <label class="radio" for="earlytime_radio">Early Show</label></div>
+                <div><input type="radio" id="latetime_radio" name="time" value="late" class="radio">
+                    <label class="radio" for="latetime_radio">Late Show</label></div>
+                <div><input type="radio" id="onlytime_radio" name="time" value="only" class="radio" checked >
+                    <label class="radio "for="onlytime_radio">Only Show</label></div>
+            </div>
+                
+            <div class="inputRow">
+                <label for="lineup_input">Lineup:</label>
+                <textarea id=" lineup_input" rows=10 placeholder="Add one bandmember per line.." name="lineup"></textarea>
+            </div>
+            <div class="inputRow">
+                <label for="venue_input">Venue:</label>
+                <input type="text" id="venue_input" name="venue">
+            </div>
+            <div class="inputRow">
+                <label for="country_input">Country:</label>
+                <input type="text" id="country_input" name="country">
+            </div>
+            <div class="inputRow">
+                <label for="state_input">State:</label>
+                <input type="text" id="state_input" name="state">
+            </div>
+            <div class="inputRow">
+                <label for="city_input">City:</label>
+                <input type="text" id="city_input" name="city">
+            </div>
+            <div class="inputRow">
+                <label for="setlist_input">Setlist:</label>
+                <textarea rows=10 id="setlist_input" name="setlist" placeholder="Add one song per line..."></textarea>
+            </div>
+            <button type="submit">Add Show</button>
+        </form>
+        </div>
+        </div>
+        
+        
+           
+    </body>
+</html>

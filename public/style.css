@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+h1{
+    font-weight: lighter;
+}
+
+html, body {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%
+}
+
+.addShowPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: url('bg01.jpg') no-repeat center center fixed;
+    background-size: cover;
+}delete
+
+.addShow_form {
+    
+}
+
+.addShow_form label:not(.radio) {
+    vertical-align: top;
+    display: inline-block;
+    width: 5rem;
+    padding: .5rem;
+}
+
+.addShow_form input:not(.radio), .addShow_form textarea {
+    display: inline-block;
+    width: 15rem;
+    padding: .5rem;
+}
+
+.addShow_form .inputRow {
+    padding: .5rem;
+}
+
+.addShow_form button {
+    background: white;
+    border: .5px solid grey;
+    width: 100%;
+    color: white;
+    background: #22AA22;
+    padding: .5rem;
+}
+
+.addShowWrapper {
+    display: inline-block;
+    background: rgba(255,255,255,.9);
+}
+
+.radioRow {
+    display: flex;
+}
+
+.radioRow > * {
+    flex: 1;
+    white-space: nowrap
+}
+
+input .radio {
+    -webkit-appearance: none;
+    background: none
+}
+
+.showCard {
+    width: 75%;
+    background: rgba(255,255,255, .9);
+    margin: 1rem auto 0 auto;
+}
+
+.showCard .header{
+    background: cornflowerblue;
+    padding: .5rem;
+    color: white;
+}
+
+.showCard .content {
+    padding: 1rem;
+}
+
+.showCard h4{
+    padding: .5rem 0;
+}
+
+.homePage {
+    background: url('bg02.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.homePageHeader{
+    background: orange;
+    color: white;
+    padding: .5rem;
+}

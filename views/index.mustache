@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="homePage">
+            <header class="homePageHeader">
+                <h1>Zappa Show Database</h1>
+            </header>
+        <a href="/addShow">Add A Show</a>
+        {{#shows}}
+            <div class ="showCard" data-id="{{_id}}">
+                <div class="header">
+                    <h3>{{formattedDate}} - {{location.venue}}</h3>
+                
+                    <h3>{{location.city}}, {{location.state_province}}, {{location.country}}</h3>
+                    <form action="/edit/{{_id}}" method="get">
+                        <button type="submit">edit</button>
+                    </form>
+                    
+                    <form action="/delete/{{_id}}" method="post">
+                        <button type="submit">delete</button>
+                    </form>
+                </div>
+                <div class="content">
+                <h4>Lineup</h4>
+                {{#lineup}}
+                    <div>{{.}}</div>
+                {{/lineup}}
+                <h4>Setlist</h4>
+                {{#setlist}}
+                    <div>{{.}}</div>
+                {{/setlist}}
+                </div>
+            </div>
+        {{/shows}}
+        </div>
+    </body>
+</html>
